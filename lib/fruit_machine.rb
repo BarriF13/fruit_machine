@@ -1,8 +1,8 @@
 class FruitMachine
   def initialize
-    @slots = ['black', 'white','green','yellow']
+    @slots = ['Black', 'White','Green','Yellow']
   end
   def display
-    @slots.join(" | ")
+    @slots.sample(4).join(" | ")
   end
 end
